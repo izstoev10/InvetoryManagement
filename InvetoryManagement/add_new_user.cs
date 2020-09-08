@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace InvetoryManagement
 {
-    public partial class Form1 : Form
+    public partial class add_new_user : Form
     {
-        public Form1()
+        public add_new_user()
         {
             InitializeComponent();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
