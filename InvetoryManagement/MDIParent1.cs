@@ -103,5 +103,11 @@ namespace InvetoryManagement
                 childForm.Close();
             }
         }
+
+        private void unitsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var unit = new unit();
+            unit.Show();
+        }
     }
 }
