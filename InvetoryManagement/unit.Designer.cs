@@ -70,6 +70,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(370, 57);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(379, 310);
             this.dataGridView1.TabIndex = 3;
             // 
@@ -82,6 +83,7 @@
             this.button2.TabIndex = 4;
             this.button2.Text = "Delete";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // unit
             // 

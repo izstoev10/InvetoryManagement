@@ -77,6 +77,19 @@ namespace InvetoryManagement
 
 
         }
-       
+        
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //get unit that will be deleted
+            int id;
+            id = Convert.ToInt32(dataGridView1.SelectedCells[0].Value.ToString());
+
+            //execute query
+            SqlCommand cmd = con.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "DELETE FROM Units WHERE id = '" + id + "'";
+            cmd.ExecuteNonQuery();
+            display();
+        }
     }
 }
